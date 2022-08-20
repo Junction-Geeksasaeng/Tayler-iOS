@@ -31,6 +31,21 @@
 		A25F508328B1120400F81F34 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F508228B1120400F81F34 /* UIView+Extension.swift */; };
 		A25F508428B1120400F81F34 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F508228B1120400F81F34 /* UIView+Extension.swift */; };
 		A25F508528B1120400F81F34 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F508228B1120400F81F34 /* UIView+Extension.swift */; };
+		A25F508728B11E8900F81F34 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F508628B11E8900F81F34 /* DetailViewController.swift */; };
+		A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F508628B11E8900F81F34 /* DetailViewController.swift */; };
+		A25F508928B11E8900F81F34 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F508628B11E8900F81F34 /* DetailViewController.swift */; };
+		A25F50AA28B1271600F81F34 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509428B1271600F81F34 /* Roboto-Regular.ttf */; };
+		A25F50AB28B1271600F81F34 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509428B1271600F81F34 /* Roboto-Regular.ttf */; };
+		A25F50AC28B1271600F81F34 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509428B1271600F81F34 /* Roboto-Regular.ttf */; };
+		A25F50AD28B1271600F81F34 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509528B1271600F81F34 /* Roboto-Medium.ttf */; };
+		A25F50AE28B1271600F81F34 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509528B1271600F81F34 /* Roboto-Medium.ttf */; };
+		A25F50AF28B1271600F81F34 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509528B1271600F81F34 /* Roboto-Medium.ttf */; };
+		A25F50BC28B1271600F81F34 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */; };
+		A25F50BD28B1271600F81F34 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */; };
+		A25F50BE28B1271600F81F34 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */; };
+		A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
+		A2B0665E28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
+		A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +84,11 @@
 		A25F507A28B10B8700F81F34 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		A25F507B28B10B8700F81F34 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
 		A25F508228B1120400F81F34 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A25F508628B11E8900F81F34 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A25F509428B1271600F81F34 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A25F509528B1271600F81F34 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +139,7 @@
 		A25F503828B0CEBF00F81F34 /* tayler */ = {
 			isa = PBXGroup;
 			children = (
+				A25F508E28B1270100F81F34 /* Font */,
 				A25F506928B0DA0C00F81F34 /* App */,
 				A25F507028B0E20D00F81F34 /* View */,
 				A25F503F28B0CEBF00F81F34 /* Main.storyboard */,
@@ -160,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				A25F503D28B0CEBF00F81F34 /* HomeViewController.swift */,
+				A25F508628B11E8900F81F34 /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -188,8 +210,19 @@
 			children = (
 				A25F507528B0E4B300F81F34 /* UIColor+Extension.swift */,
 				A25F508228B1120400F81F34 /* UIView+Extension.swift */,
+				A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A25F508E28B1270100F81F34 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */,
+				A25F509528B1271600F81F34 /* Roboto-Medium.ttf */,
+				A25F509428B1271600F81F34 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +330,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25F507F28B10B8700F81F34 /* ContentCollectionViewCell.xib in Resources */,
+				A25F50AA28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F504628B0CEC000F81F34 /* LaunchScreen.storyboard in Resources */,
 				A25F504328B0CEC000F81F34 /* Assets.xcassets in Resources */,
+				A25F50AD28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
 				A25F504128B0CEBF00F81F34 /* Main.storyboard in Resources */,
+				A25F50BC28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +343,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25F50BD28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
+				A25F50AE28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
+				A25F50AB28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F508028B10B8700F81F34 /* ContentCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25F50BE28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
+				A25F50AF28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
+				A25F50AC28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F508128B10B8700F81F34 /* ContentCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +374,9 @@
 				A25F507C28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A25F503A28B0CEBF00F81F34 /* AppDelegate.swift in Sources */,
 				A25F503C28B0CEBF00F81F34 /* SceneDelegate.swift in Sources */,
+				A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F507628B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
+				A25F508728B11E8900F81F34 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +384,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B0665E28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F507D28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A25F507728B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F507328B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
+				A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */,
 				A25F508428B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F505128B0CEC000F81F34 /* taylerTests.swift in Sources */,
 			);
@@ -358,6 +404,8 @@
 				A25F505D28B0CEC000F81F34 /* taylerUITestsLaunchTests.swift in Sources */,
 				A25F507828B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F507E28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
+				A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
+				A25F508928B11E8900F81F34 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

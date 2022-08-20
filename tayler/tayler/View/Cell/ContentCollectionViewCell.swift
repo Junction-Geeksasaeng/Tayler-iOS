@@ -26,6 +26,8 @@ class ContentCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ticketNumLabel: UILabel!
     @IBOutlet weak var tayLabel: UILabel!
     
+    @IBOutlet weak var detailArrow: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -37,6 +37,12 @@ class HomeViewController: UIViewController {
         setCollectionView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     // MARK: - Functions
     
     private func setAttributes() {
@@ -64,6 +70,9 @@ class HomeViewController: UIViewController {
         contentCollectionView.backgroundColor = .init(hex: 0xE6E6E6)
         
         underTabView.layer.cornerRadius = 15
+        
+        // 스와이프 제스쳐로 VC를 pop할 수 있게 delegate 설정
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
 
     private func setCollectionView() {
@@ -75,7 +84,19 @@ class HomeViewController: UIViewController {
         contentCollectionView.delegate = self
         contentCollectionView.dataSource = self
     }
-
+    
+    // MARK: - @objc Functions
+    
+    @objc
+    private func showAuctionDetail(sender: UIButton) {
+        let view = sender.superview!
+        let backgroundImageView = view.subviews[1] as! UIImageView
+        let image = backgroundImageView.image
+        
+        let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
+        detailVC.auctionImage = image
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
@@ -116,6 +137,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.dDayLabel.text = item.dDay
             cell.ticketNumLabel.text = item.ticketNum
             cell.tayLabel.text = item.tayCost
+            cell.detailArrow.addTarget(self, action: #selector(showAuctionDetail(sender:)), for: .touchUpInside)
             
             return cell
         }
@@ -149,5 +171,15 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         } else {
             return CGFloat(0)
         }
+    }
+}
+
+// MARK: - UIGestureRecognizerDelegate
+
+extension UIViewController: UIGestureRecognizerDelegate {
+    
+    /* 스와이프 제스쳐로 VC를 pop할 수 있게 설정 */
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 }

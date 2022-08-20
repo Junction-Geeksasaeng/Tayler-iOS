@@ -35,13 +35,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Ci5-RU-umc">
-                                <rect key="frame" x="126" y="26.5" width="14" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="kdL-hH-aAT"/>
-                                    <constraint firstAttribute="width" constant="14" id="ycI-ej-6gA"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-ZH-lT8">
                                 <rect key="frame" x="0.0" y="84" width="160" height="93"/>
                             </view>
@@ -83,17 +76,26 @@
                                 <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN9-ab-5ga">
+                                <rect key="frame" x="131" y="26.5" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="fhw-GO-bIq"/>
+                                    <constraint firstAttribute="width" constant="14" id="kEP-S9-LrJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="WhiteArrow" title=""/>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="QbU-43-lEF" firstAttribute="top" secondItem="tgr-Eq-LMu" secondAttribute="bottom" constant="5" id="7sc-PW-ooZ"/>
-                            <constraint firstAttribute="trailing" secondItem="Ci5-RU-umc" secondAttribute="trailing" constant="20" id="8Us-AY-iIt"/>
-                            <constraint firstItem="Ci5-RU-umc" firstAttribute="centerY" secondItem="n87-CH-APn" secondAttribute="centerY" id="Bmx-Oa-QVY"/>
                             <constraint firstAttribute="trailing" secondItem="tgr-Eq-LMu" secondAttribute="trailing" id="EoC-FP-bMS"/>
                             <constraint firstItem="n87-CH-APn" firstAttribute="top" secondItem="SuK-3o-zYI" secondAttribute="top" constant="20" id="FrI-tA-Msv"/>
                             <constraint firstItem="tQf-ev-bxF" firstAttribute="leading" secondItem="QbU-43-lEF" secondAttribute="trailing" constant="16" id="HbX-D5-Ffi"/>
                             <constraint firstAttribute="trailing" secondItem="1BM-ZH-lT8" secondAttribute="trailing" id="Hgj-RM-juP"/>
                             <constraint firstItem="n87-CH-APn" firstAttribute="leading" secondItem="SuK-3o-zYI" secondAttribute="leading" constant="20" id="JQT-jv-FfA"/>
                             <constraint firstItem="tgr-Eq-LMu" firstAttribute="top" secondItem="SuK-3o-zYI" secondAttribute="top" id="Jnp-Vl-Yfo"/>
+                            <constraint firstItem="PN9-ab-5ga" firstAttribute="centerY" secondItem="n87-CH-APn" secondAttribute="centerY" id="OLd-CP-PHd"/>
+                            <constraint firstAttribute="trailing" secondItem="PN9-ab-5ga" secondAttribute="trailing" constant="15" id="SxR-Sc-kzI"/>
                             <constraint firstItem="6ZN-9Z-VVW" firstAttribute="leading" secondItem="SuK-3o-zYI" secondAttribute="leading" constant="17" id="UJA-lo-Fcv"/>
                             <constraint firstItem="6ZN-9Z-VVW" firstAttribute="top" secondItem="QbU-43-lEF" secondAttribute="bottom" constant="4" id="Uyt-eG-d9e"/>
                             <constraint firstItem="tgr-Eq-LMu" firstAttribute="bottom" secondItem="1BM-ZH-lT8" secondAttribute="bottom" id="XD2-Kf-yOS"/>
@@ -129,6 +131,7 @@
                 <outlet property="blurView" destination="1BM-ZH-lT8" id="kmO-lb-0ZV"/>
                 <outlet property="contentImageView" destination="tgr-Eq-LMu" id="Uba-OD-fgX"/>
                 <outlet property="dDayLabel" destination="QbU-43-lEF" id="775-DI-qTg"/>
+                <outlet property="detailArrow" destination="PN9-ab-5ga" id="Wr5-Xi-Nx8"/>
                 <outlet property="tayLabel" destination="7bP-4t-WtI" id="dxk-ZM-XFY"/>
                 <outlet property="ticketNumLabel" destination="tQf-ev-bxF" id="GHs-fT-k4J"/>
                 <outlet property="titleLabel" destination="n87-CH-APn" id="f5v-Xz-cMv"/>
@@ -138,7 +141,7 @@
     </objects>
     <resources>
         <image name="Cats" width="162" height="177"/>
-        <image name="CoinIcon" width="11" height="11"/>
+        <image name="CoinIcon" width="200" height="200"/>
         <image name="TicketShape" width="162" height="241"/>
         <image name="WhiteArrow" width="10" height="16"/>
     </resources>
