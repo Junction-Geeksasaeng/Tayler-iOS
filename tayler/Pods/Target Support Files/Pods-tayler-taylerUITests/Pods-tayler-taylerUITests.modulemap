@@ -1,0 +1,6 @@
+framework module Pods_tayler_taylerUITests {
+  umbrella header "Pods-tayler-taylerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

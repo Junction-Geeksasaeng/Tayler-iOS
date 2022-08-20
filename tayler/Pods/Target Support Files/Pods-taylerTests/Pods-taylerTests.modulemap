@@ -1,0 +1,6 @@
+framework module Pods_taylerTests {
+  umbrella header "Pods-taylerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

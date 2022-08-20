@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E29A9B8BA5A1D0128A00CE5 /* Pods_tayler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CA4AE4BA96D49D7B87E746 /* Pods_tayler.framework */; };
 		A25F503A28B0CEBF00F81F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503928B0CEBF00F81F34 /* AppDelegate.swift */; };
 		A25F503C28B0CEBF00F81F34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503B28B0CEBF00F81F34 /* SceneDelegate.swift */; };
 		A25F503E28B0CEBF00F81F34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503D28B0CEBF00F81F34 /* HomeViewController.swift */; };
@@ -46,6 +47,14 @@
 		A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 		A2B0665E28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 		A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
+		A2B0666228B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */; };
+		A2B0666328B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */; };
+		A2B0666428B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */; };
+		A2B0666528B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */; };
+		A2B0666628B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */; };
+		A2B0666728B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */; };
+		C889F08586EB5F65EED7890A /* Pods_tayler_taylerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F968643DD60F52727287C3F /* Pods_tayler_taylerUITests.framework */; };
+		ED90F4B72F433EA2D56105B0 /* Pods_taylerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A584F1660664DAEE56CFCD1A /* Pods_taylerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15403FE54D4E9B7F583C630D /* Pods-tayler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tayler.release.xcconfig"; path = "Target Support Files/Pods-tayler/Pods-tayler.release.xcconfig"; sourceTree = "<group>"; };
+		43709FFA9E207BDDCBFE53E6 /* Pods-taylerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taylerTests.debug.xcconfig"; path = "Target Support Files/Pods-taylerTests/Pods-taylerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F968643DD60F52727287C3F /* Pods_tayler_taylerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tayler_taylerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CA4AE4BA96D49D7B87E746 /* Pods_tayler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tayler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25F503628B0CEBF00F81F34 /* tayler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tayler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25F503928B0CEBF00F81F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25F503B28B0CEBF00F81F34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +102,13 @@
 		A25F509528B1271600F81F34 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A584F1660664DAEE56CFCD1A /* Pods_taylerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taylerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD06763A00708D04A7E7BD72 /* Pods-tayler-taylerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tayler-taylerUITests.debug.xcconfig"; path = "Target Support Files/Pods-tayler-taylerUITests/Pods-tayler-taylerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0EA694FDFC7FD038DC7E43B /* Pods-tayler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tayler.debug.xcconfig"; path = "Target Support Files/Pods-tayler/Pods-tayler.debug.xcconfig"; sourceTree = "<group>"; };
+		E56B375187D33CDD5F3256DB /* Pods-tayler-taylerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tayler-taylerUITests.release.xcconfig"; path = "Target Support Files/Pods-tayler-taylerUITests/Pods-tayler-taylerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC1BCCDB1B94113A75BE7394 /* Pods-taylerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taylerTests.release.xcconfig"; path = "Target Support Files/Pods-taylerTests/Pods-taylerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E29A9B8BA5A1D0128A00CE5 /* Pods_tayler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED90F4B72F433EA2D56105B0 /* Pods_taylerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +132,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C889F08586EB5F65EED7890A /* Pods_tayler_taylerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8A1DDA33D3BE7B6DF355A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA694FDFC7FD038DC7E43B /* Pods-tayler.debug.xcconfig */,
+				15403FE54D4E9B7F583C630D /* Pods-tayler.release.xcconfig */,
+				DD06763A00708D04A7E7BD72 /* Pods-tayler-taylerUITests.debug.xcconfig */,
+				E56B375187D33CDD5F3256DB /* Pods-tayler-taylerUITests.release.xcconfig */,
+				43709FFA9E207BDDCBFE53E6 /* Pods-taylerTests.debug.xcconfig */,
+				EC1BCCDB1B94113A75BE7394 /* Pods-taylerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42F926B71D03348DF206B9C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67CA4AE4BA96D49D7B87E746 /* Pods_tayler.framework */,
+				4F968643DD60F52727287C3F /* Pods_tayler_taylerUITests.framework */,
+				A584F1660664DAEE56CFCD1A /* Pods_taylerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A25F502D28B0CEBF00F81F34 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +170,8 @@
 				A25F504F28B0CEC000F81F34 /* taylerTests */,
 				A25F505928B0CEC000F81F34 /* taylerUITests */,
 				A25F503728B0CEBF00F81F34 /* Products */,
+				2E8A1DDA33D3BE7B6DF355A4 /* Pods */,
+				42F926B71D03348DF206B9C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +241,8 @@
 				A25F507128B0E2ED00F81F34 /* CategoryCollectionViewCell.swift */,
 				A25F507A28B10B8700F81F34 /* ContentCollectionViewCell.swift */,
 				A25F507B28B10B8700F81F34 /* ContentCollectionViewCell.xib */,
+				A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */,
+				A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -232,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25F506028B0CEC000F81F34 /* Build configuration list for PBXNativeTarget "tayler" */;
 			buildPhases = (
+				8F9DDC67F671AD459128572C /* [CP] Check Pods Manifest.lock */,
 				A25F503228B0CEBF00F81F34 /* Sources */,
 				A25F503328B0CEBF00F81F34 /* Frameworks */,
 				A25F503428B0CEBF00F81F34 /* Resources */,
+				FF0F9D30769FFAD7CEFD58D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25F506328B0CEC000F81F34 /* Build configuration list for PBXNativeTarget "taylerTests" */;
 			buildPhases = (
+				CF852EAB24CF79E19CDC1291 /* [CP] Check Pods Manifest.lock */,
 				A25F504828B0CEC000F81F34 /* Sources */,
 				A25F504928B0CEC000F81F34 /* Frameworks */,
 				A25F504A28B0CEC000F81F34 /* Resources */,
@@ -267,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25F506628B0CEC000F81F34 /* Build configuration list for PBXNativeTarget "taylerUITests" */;
 			buildPhases = (
+				CF96B48E0DE3494FABC128F1 /* [CP] Check Pods Manifest.lock */,
 				A25F505228B0CEC000F81F34 /* Sources */,
 				A25F505328B0CEC000F81F34 /* Frameworks */,
 				A25F505428B0CEC000F81F34 /* Resources */,
+				DB07D43896D25F54BFBB646E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25F507F28B10B8700F81F34 /* ContentCollectionViewCell.xib in Resources */,
+				A2B0666528B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */,
 				A25F50AA28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F504628B0CEC000F81F34 /* LaunchScreen.storyboard in Resources */,
 				A25F504328B0CEC000F81F34 /* Assets.xcassets in Resources */,
@@ -345,6 +402,7 @@
 			files = (
 				A25F50BD28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
 				A25F50AE28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
+				A2B0666628B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */,
 				A25F50AB28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F508028B10B8700F81F34 /* ContentCollectionViewCell.xib in Resources */,
 			);
@@ -356,12 +414,116 @@
 			files = (
 				A25F50BE28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
 				A25F50AF28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
+				A2B0666728B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */,
 				A25F50AC28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F508128B10B8700F81F34 /* ContentCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F9DDC67F671AD459128572C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tayler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF852EAB24CF79E19CDC1291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taylerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF96B48E0DE3494FABC128F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tayler-taylerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB07D43896D25F54BFBB646E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tayler-taylerUITests/Pods-tayler-taylerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tayler-taylerUITests/Pods-tayler-taylerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tayler-taylerUITests/Pods-tayler-taylerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0F9D30769FFAD7CEFD58D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tayler/Pods-tayler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tayler/Pods-tayler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tayler/Pods-tayler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A25F503228B0CEBF00F81F34 /* Sources */ = {
@@ -377,6 +539,7 @@
 				A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F507628B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F508728B11E8900F81F34 /* DetailViewController.swift in Sources */,
+				A2B0666228B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +552,7 @@
 				A25F507728B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F507328B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */,
+				A2B0666328B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 				A25F508428B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F505128B0CEC000F81F34 /* taylerTests.swift in Sources */,
 			);
@@ -402,6 +566,7 @@
 				A25F505B28B0CEC000F81F34 /* taylerUITests.swift in Sources */,
 				A25F507428B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A25F505D28B0CEC000F81F34 /* taylerUITestsLaunchTests.swift in Sources */,
+				A2B0666428B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 				A25F507828B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F507E28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
@@ -560,6 +725,7 @@
 		};
 		A25F506128B0CEC000F81F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EA694FDFC7FD038DC7E43B /* Pods-tayler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,6 +754,7 @@
 		};
 		A25F506228B0CEC000F81F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15403FE54D4E9B7F583C630D /* Pods-tayler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -616,6 +783,7 @@
 		};
 		A25F506428B0CEC000F81F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43709FFA9E207BDDCBFE53E6 /* Pods-taylerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,6 +804,7 @@
 		};
 		A25F506528B0CEC000F81F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1BCCDB1B94113A75BE7394 /* Pods-taylerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,6 +825,7 @@
 		};
 		A25F506728B0CEC000F81F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD06763A00708D04A7E7BD72 /* Pods-tayler-taylerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,6 +844,7 @@
 		};
 		A25F506828B0CEC000F81F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56B375187D33CDD5F3256DB /* Pods-tayler-taylerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
