@@ -20,7 +20,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="tayler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeViewController" customModule="tayler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -891,6 +891,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Done" style="plain" id="dVt-NY-T7J">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="tapDoneButton:" destination="8LX-XL-ngE" id="tL7-ku-iDY"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1241,6 +1244,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ik6-VZ-7FG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4111.594202898551" y="95.758928571428569"/>
+        </scene>
+        <!--Pay Complete View Controller-->
+        <scene sceneID="CCn-Y9-dAk">
+            <objects>
+                <viewController storyboardIdentifier="PayCompleteVC" id="zzj-2b-I1N" customClass="PayCompleteViewController" customModule="tayler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tet-ZU-6Sd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dl-Sk-Vxy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Buy Tickets" id="ib4-Ub-Hwj">
+                                        <barButtonItem key="leftBarButtonItem" image="BackBlackArrow" id="7Yz-Xq-5bL">
+                                            <connections>
+                                                <action selector="showPrevious:" destination="8LX-XL-ngE" id="WRb-2p-Ho0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" style="plain" id="xAV-lB-Ahu">
+                                            <color key="tintColor" red="0.34901960780000002" green="0.16078431369999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="showHomeView:" destination="zzj-2b-I1N" id="5ae-4c-Wm3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations !" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j2-UO-K6N">
+                                <rect key="frame" x="28" y="131" width="245" height="37.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you, your transaction was a success !" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYa-d8-bnI">
+                                <rect key="frame" x="28" y="218.5" width="358" height="112.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35I-5J-KMD">
+                                <rect key="frame" x="28" y="429" width="358" height="70.5"/>
+                                <string key="text">Please be aware that a blockchain transaction can take a little more time and so you might need to wait for your confirmation, depending how busy the service is at the time (averge 30 mins).</string>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.34901960780000002" green="0.16078431369999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x6w-aK-B5x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5j2-UO-K6N" firstAttribute="top" secondItem="5Dl-Sk-Vxy" secondAttribute="bottom" constant="43" id="7Qy-P3-Mhj"/>
+                            <constraint firstItem="zYa-d8-bnI" firstAttribute="top" secondItem="5j2-UO-K6N" secondAttribute="bottom" constant="50" id="8pV-lZ-Ssw"/>
+                            <constraint firstItem="zYa-d8-bnI" firstAttribute="leading" secondItem="5j2-UO-K6N" secondAttribute="leading" id="BMV-EL-mo1"/>
+                            <constraint firstItem="35I-5J-KMD" firstAttribute="top" secondItem="zYa-d8-bnI" secondAttribute="bottom" constant="98" id="KqE-qV-e7Y"/>
+                            <constraint firstItem="x6w-aK-B5x" firstAttribute="trailing" secondItem="zYa-d8-bnI" secondAttribute="trailing" constant="28" id="Uqv-Vg-jBD"/>
+                            <constraint firstItem="x6w-aK-B5x" firstAttribute="trailing" secondItem="35I-5J-KMD" secondAttribute="trailing" constant="28" id="bap-oT-fqM"/>
+                            <constraint firstItem="5Dl-Sk-Vxy" firstAttribute="top" secondItem="tet-ZU-6Sd" secondAttribute="top" constant="44" id="eqA-Mt-QLh"/>
+                            <constraint firstItem="zYa-d8-bnI" firstAttribute="leading" secondItem="x6w-aK-B5x" secondAttribute="leading" constant="28" id="gif-a5-jTE"/>
+                            <constraint firstItem="5Dl-Sk-Vxy" firstAttribute="leading" secondItem="tet-ZU-6Sd" secondAttribute="leading" id="nmR-22-PIA"/>
+                            <constraint firstItem="35I-5J-KMD" firstAttribute="leading" secondItem="tet-ZU-6Sd" secondAttribute="leading" constant="28" id="q54-n5-8GJ"/>
+                            <constraint firstItem="5j2-UO-K6N" firstAttribute="leading" secondItem="x6w-aK-B5x" secondAttribute="leading" constant="28" id="sim-7b-e13"/>
+                            <constraint firstItem="5Dl-Sk-Vxy" firstAttribute="centerX" secondItem="zYa-d8-bnI" secondAttribute="centerX" id="vxY-Ww-SeZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QQ-F5-Ptn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4828.985507246377" y="95.758928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BtZ-T6-PYh">

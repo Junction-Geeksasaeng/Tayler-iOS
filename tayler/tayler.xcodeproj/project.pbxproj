@@ -68,6 +68,9 @@
 		A276033B28B1DB3600EBE3F7 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276033A28B1DB3600EBE3F7 /* PayViewController.swift */; };
 		A276033C28B1DB3600EBE3F7 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276033A28B1DB3600EBE3F7 /* PayViewController.swift */; };
 		A276033D28B1DB3600EBE3F7 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276033A28B1DB3600EBE3F7 /* PayViewController.swift */; };
+		A276033F28B1EDD600EBE3F7 /* PayCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276033E28B1EDD600EBE3F7 /* PayCompleteViewController.swift */; };
+		A276034028B1EDD600EBE3F7 /* PayCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276033E28B1EDD600EBE3F7 /* PayCompleteViewController.swift */; };
+		A276034128B1EDD600EBE3F7 /* PayCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276033E28B1EDD600EBE3F7 /* PayCompleteViewController.swift */; };
 		A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 		A2B0665E28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 		A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
@@ -133,6 +136,7 @@
 		A276033228B1CF1A00EBE3F7 /* ShoppingCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewCell.swift; sourceTree = "<group>"; };
 		A276033328B1CF1A00EBE3F7 /* ShoppingCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartTableViewCell.xib; sourceTree = "<group>"; };
 		A276033A28B1DB3600EBE3F7 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		A276033E28B1EDD600EBE3F7 /* PayCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCompleteViewController.swift; sourceTree = "<group>"; };
 		A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 				A2270C3828B15B9700D075C1 /* TicketViewController.swift */,
 				A2270C4428B1C5BF00D075C1 /* PaymentViewController.swift */,
 				A276033A28B1DB3600EBE3F7 /* PayViewController.swift */,
+				A276033E28B1EDD600EBE3F7 /* PayCompleteViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 				A2270C4528B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A25F508328B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F503E28B0CEBF00F81F34 /* HomeViewController.swift in Sources */,
+				A276033F28B1EDD600EBE3F7 /* PayCompleteViewController.swift in Sources */,
 				A2270C3928B15B9700D075C1 /* TicketViewController.swift in Sources */,
 				A276033428B1CF1A00EBE3F7 /* ShoppingCartTableViewCell.swift in Sources */,
 				A25F507C28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
@@ -613,6 +619,7 @@
 				A25F507328B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A276032F28B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */,
 				A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */,
+				A276034028B1EDD600EBE3F7 /* PayCompleteViewController.swift in Sources */,
 				A2270C3F28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
 				A2270C4628B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A2B0666328B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
@@ -639,6 +646,7 @@
 				A2270C4728B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A2270C3B28B15B9700D075C1 /* TicketViewController.swift in Sources */,
 				A25F507E28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
+				A276034128B1EDD600EBE3F7 /* PayCompleteViewController.swift in Sources */,
 				A276033028B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */,
 				A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F508928B11E8900F81F34 /* DetailViewController.swift in Sources */,

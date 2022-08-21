@@ -36,4 +36,9 @@ class PayViewController: UIViewController {
     @IBAction func showPrevious(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func tapDoneButton(_ sender: Any) {
+        let payCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "PayCompleteVC") as! PayCompleteViewController
+        self.navigationController?.pushViewController(payCompleteVC, animated: true)
+    }
 }
