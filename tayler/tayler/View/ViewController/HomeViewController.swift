@@ -20,7 +20,11 @@ class HomeViewController: UIViewController {
         Content(contentImage: UIImage(named: "Chicago"), dDay: "D-9", ticketNum: "#1 - #108", tayCost: "2.1"),
         Content(contentImage: UIImage(named: "Wicked"), dDay: "D-10", ticketNum: "#1 - #80", tayCost: "1.1"),
         Content(contentImage: UIImage(named: "Phantom"), dDay: "D-347", ticketNum: "#1 - #100", tayCost: "0"),
-    ]
+    ] {
+        didSet {
+            contentCollectionView.reloadData()
+        }
+    }
     
     // MARK: - Outlets
     
