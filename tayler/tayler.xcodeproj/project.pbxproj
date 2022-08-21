@@ -17,6 +17,9 @@
 		A2270C4128B1626A00D075C1 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */; };
 		A2270C4228B1626A00D075C1 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */; };
 		A2270C4328B1626A00D075C1 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */; };
+		A2270C4528B1C5BF00D075C1 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C4428B1C5BF00D075C1 /* PaymentViewController.swift */; };
+		A2270C4628B1C5BF00D075C1 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C4428B1C5BF00D075C1 /* PaymentViewController.swift */; };
+		A2270C4728B1C5BF00D075C1 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C4428B1C5BF00D075C1 /* PaymentViewController.swift */; };
 		A25F503A28B0CEBF00F81F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503928B0CEBF00F81F34 /* AppDelegate.swift */; };
 		A25F503C28B0CEBF00F81F34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503B28B0CEBF00F81F34 /* SceneDelegate.swift */; };
 		A25F503E28B0CEBF00F81F34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503D28B0CEBF00F81F34 /* HomeViewController.swift */; };
@@ -91,6 +94,7 @@
 		A2270C3828B15B9700D075C1 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		A2270C3C28B1626A00D075C1 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
+		A2270C4428B1C5BF00D075C1 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		A25F503628B0CEBF00F81F34 /* tayler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tayler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25F503928B0CEBF00F81F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25F503B28B0CEBF00F81F34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 				A25F503D28B0CEBF00F81F34 /* HomeViewController.swift */,
 				A25F508628B11E8900F81F34 /* DetailViewController.swift */,
 				A2270C3828B15B9700D075C1 /* TicketViewController.swift */,
+				A2270C4428B1C5BF00D075C1 /* PaymentViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -548,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25F507228B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
+				A2270C4528B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A25F508328B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F503E28B0CEBF00F81F34 /* HomeViewController.swift in Sources */,
 				A2270C3928B15B9700D075C1 /* TicketViewController.swift in Sources */,
@@ -572,6 +578,7 @@
 				A25F507328B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */,
 				A2270C3F28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
+				A2270C4628B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A2B0666328B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 				A25F508428B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F505128B0CEC000F81F34 /* taylerTests.swift in Sources */,
@@ -590,6 +597,7 @@
 				A2B0666428B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 				A25F507828B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A2270C4028B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
+				A2270C4728B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A2270C3B28B15B9700D075C1 /* TicketViewController.swift in Sources */,
 				A25F507E28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,

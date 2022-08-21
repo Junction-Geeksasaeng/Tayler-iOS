@@ -8,6 +8,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -776,6 +781,83 @@
             </objects>
             <point key="canvasLocation" x="2618.840579710145" y="95.758928571428569"/>
         </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="hO0-Qs-8ry">
+            <objects>
+                <viewController storyboardIdentifier="PaymentVC" id="Iz4-Wy-l4W" customClass="PaymentViewController" customModule="tayler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ckk-as-3fx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsF-Tl-YJB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Buy Tickets" id="kEs-dg-i1V">
+                                        <barButtonItem key="leftBarButtonItem" image="BackBlackArrow" id="Svd-pu-Yzx"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="sqp-Eq-5AS">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tayler show" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeD-Pu-7d3">
+                                <rect key="frame" x="28" y="131" width="286" height="37.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your shopping cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQc-Ni-1mc">
+                                <rect key="frame" x="28" y="173.5" width="268" height="38"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* If there’s any problem, you can delete items." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAU-We-wRF">
+                                <rect key="frame" x="31" y="229.5" width="283.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.34901960780000002" green="0.16078431369999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DUz-jf-3uD">
+                                <rect key="frame" x="0.0" y="283" width="414" height="579"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="x5g-Q9-evg">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x5g-Q9-evg" id="E2y-nm-JqL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uBZ-ce-WwM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uBZ-ce-WwM" firstAttribute="bottom" secondItem="DUz-jf-3uD" secondAttribute="bottom" id="1NL-4e-DcX"/>
+                            <constraint firstAttribute="trailing" secondItem="GsF-Tl-YJB" secondAttribute="trailing" id="47X-bj-q5b"/>
+                            <constraint firstAttribute="trailing" secondItem="CeD-Pu-7d3" secondAttribute="trailing" constant="100" id="7Yu-wP-paF"/>
+                            <constraint firstItem="DUz-jf-3uD" firstAttribute="top" secondItem="IAU-We-wRF" secondAttribute="bottom" constant="37" id="Bpm-go-tnT"/>
+                            <constraint firstItem="DUz-jf-3uD" firstAttribute="leading" secondItem="uBZ-ce-WwM" secondAttribute="leading" id="C5H-3V-nTJ"/>
+                            <constraint firstItem="IAU-We-wRF" firstAttribute="leading" secondItem="uBZ-ce-WwM" secondAttribute="leading" constant="31" id="P0m-be-cil"/>
+                            <constraint firstItem="GsF-Tl-YJB" firstAttribute="leading" secondItem="ckk-as-3fx" secondAttribute="leading" id="WJJ-o7-irz"/>
+                            <constraint firstItem="lQc-Ni-1mc" firstAttribute="top" secondItem="CeD-Pu-7d3" secondAttribute="bottom" constant="5" id="Wnb-58-GAa"/>
+                            <constraint firstItem="CeD-Pu-7d3" firstAttribute="leading" secondItem="uBZ-ce-WwM" secondAttribute="leading" constant="28" id="Y7g-AB-LpE"/>
+                            <constraint firstItem="uBZ-ce-WwM" firstAttribute="trailing" secondItem="DUz-jf-3uD" secondAttribute="trailing" id="iJ3-JD-gsN"/>
+                            <constraint firstItem="lQc-Ni-1mc" firstAttribute="leading" secondItem="CeD-Pu-7d3" secondAttribute="leading" id="k41-nM-VFw"/>
+                            <constraint firstItem="GsF-Tl-YJB" firstAttribute="top" secondItem="uBZ-ce-WwM" secondAttribute="top" id="qRa-xz-vXh"/>
+                            <constraint firstItem="IAU-We-wRF" firstAttribute="top" secondItem="lQc-Ni-1mc" secondAttribute="bottom" constant="18" id="sTz-Io-aBj"/>
+                            <constraint firstItem="CeD-Pu-7d3" firstAttribute="top" secondItem="GsF-Tl-YJB" secondAttribute="bottom" constant="43" id="vX5-t3-w5h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDc-EE-dfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3405.7971014492755" y="95.758928571428569"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="BtZ-T6-PYh">
             <objects>
@@ -798,6 +880,7 @@
     <resources>
         <image name="AdImage" width="390" height="66"/>
         <image name="Arrow" width="7" height="10"/>
+        <image name="BackBlackArrow" width="11" height="18"/>
         <image name="Bell" width="20" height="24"/>
         <image name="Calendar" width="20" height="20"/>
         <image name="Coin" width="12" height="22"/>

@@ -11,13 +11,6 @@ class TicketViewController: UIViewController {
 
     // MARK: - Properties
     
-    var ticketList: [Ticket] = [
-        Ticket(num: "1", price: "1.1", percent: "12", usdPrice: "11.41"),
-        Ticket(num: "2", price: "1.1", percent: "12", usdPrice: "11.41"),
-        Ticket(num: "3", price: "1.1", percent: "12", usdPrice: "11.41"),
-        Ticket(num: "4", price: "1.1", percent: "12", usdPrice: "11.41"),
-        Ticket(num: "5", price: "1.1", percent: "12", usdPrice: "11.41")
-    ]
     var selectedTicketsIdx: [Int] = []
     
     // MARK: - Subviews
@@ -93,9 +86,10 @@ class TicketViewController: UIViewController {
     
     @objc
     private func tapNextLabel() {
-//        let nextVC =
-//        nextVC.list = selected
-//        self.navigationController?.pushViewController(nextVC, animated: true)
+        print("NEXT 버튼 클릭")
+        let paymentVC = self.storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentViewController
+        paymentVC.passedData = selectedTicketsIdx
+        self.navigationController?.pushViewController(paymentVC, animated: true)
     }
 }
 
@@ -103,7 +97,7 @@ class TicketViewController: UIViewController {
 
 extension TicketViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ticketList.count
+        return Ticket.ticketList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -114,10 +108,10 @@ extension TicketViewController: UITableViewDataSource, UITableViewDelegate {
         cell.selectedBackgroundView = backgroundView
         
         let item = indexPath.item
-        cell.ticketId.text = "#\(ticketList[item].num)"
-        cell.ticketPrice.text = ticketList[item].price
-        cell.ticketPercent.text = "\(ticketList[item].percent)%"
-        cell.ticketUsdPrice.text = "$\(ticketList[item].usdPrice)"
+        cell.ticketId.text = "#\(Ticket.ticketList[item].num)"
+        cell.ticketPrice.text = Ticket.ticketList[item].price
+        cell.ticketPercent.text = "\(Ticket.ticketList[item].percent)%"
+        cell.ticketUsdPrice.text = "$\(Ticket.ticketList[item].usdPrice)"
         
         return cell
     }
