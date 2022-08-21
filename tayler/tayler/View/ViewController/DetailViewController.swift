@@ -38,6 +38,7 @@ class DetailViewController: UIViewController {
         setAttributes()
         setLayouts()
         setCollectionView()
+        setViewTap()
     }
     
     override func viewWillLayoutSubviews() {
@@ -110,12 +111,26 @@ class DetailViewController: UIViewController {
         timeCollectionView.dataSource = self
     }
     
+    /* view에 탭 제스처 추가 */
+    private func setViewTap() {
+        let viewTapGesture = UITapGestureRecognizer(target: self,
+                                                    action: #selector(tapBuyTickets))
+        buyTicketView.isUserInteractionEnabled = true
+        buyTicketView.addGestureRecognizer(viewTapGesture)
+    }
+    
     // MARK: - @objc Functions
     
     /* 이전 화면으로 돌아가기 */
     @objc
     private func showPrevious(sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc
+    private func tapBuyTickets() {
+        let ticketVC = self.storyboard?.instantiateViewController(withIdentifier: "TicketVC") as! TicketViewController
+        self.navigationController?.pushViewController(ticketVC, animated: true)
     }
 }
 

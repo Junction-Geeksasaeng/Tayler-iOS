@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6E29A9B8BA5A1D0128A00CE5 /* Pods_tayler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CA4AE4BA96D49D7B87E746 /* Pods_tayler.framework */; };
+		A2270C3928B15B9700D075C1 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C3828B15B9700D075C1 /* TicketViewController.swift */; };
+		A2270C3A28B15B9700D075C1 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C3828B15B9700D075C1 /* TicketViewController.swift */; };
+		A2270C3B28B15B9700D075C1 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C3828B15B9700D075C1 /* TicketViewController.swift */; };
+		A2270C3E28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C3C28B1626A00D075C1 /* TicketTableViewCell.swift */; };
+		A2270C3F28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C3C28B1626A00D075C1 /* TicketTableViewCell.swift */; };
+		A2270C4028B1626A00D075C1 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270C3C28B1626A00D075C1 /* TicketTableViewCell.swift */; };
+		A2270C4128B1626A00D075C1 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */; };
+		A2270C4228B1626A00D075C1 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */; };
+		A2270C4328B1626A00D075C1 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */; };
 		A25F503A28B0CEBF00F81F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503928B0CEBF00F81F34 /* AppDelegate.swift */; };
 		A25F503C28B0CEBF00F81F34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503B28B0CEBF00F81F34 /* SceneDelegate.swift */; };
 		A25F503E28B0CEBF00F81F34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25F503D28B0CEBF00F81F34 /* HomeViewController.swift */; };
@@ -79,6 +88,9 @@
 		43709FFA9E207BDDCBFE53E6 /* Pods-taylerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taylerTests.debug.xcconfig"; path = "Target Support Files/Pods-taylerTests/Pods-taylerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F968643DD60F52727287C3F /* Pods_tayler_taylerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tayler_taylerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CA4AE4BA96D49D7B87E746 /* Pods_tayler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tayler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2270C3828B15B9700D075C1 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		A2270C3C28B1626A00D075C1 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
 		A25F503628B0CEBF00F81F34 /* tayler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tayler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25F503928B0CEBF00F81F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25F503B28B0CEBF00F81F34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +161,6 @@
 				43709FFA9E207BDDCBFE53E6 /* Pods-taylerTests.debug.xcconfig */,
 				EC1BCCDB1B94113A75BE7394 /* Pods-taylerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -231,6 +242,7 @@
 			children = (
 				A25F503D28B0CEBF00F81F34 /* HomeViewController.swift */,
 				A25F508628B11E8900F81F34 /* DetailViewController.swift */,
+				A2270C3828B15B9700D075C1 /* TicketViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -243,6 +255,8 @@
 				A25F507B28B10B8700F81F34 /* ContentCollectionViewCell.xib */,
 				A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */,
 				A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */,
+				A2270C3C28B1626A00D075C1 /* TicketTableViewCell.swift */,
+				A2270C3D28B1626A00D075C1 /* TicketTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -389,6 +403,7 @@
 				A2B0666528B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */,
 				A25F50AA28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
 				A25F504628B0CEC000F81F34 /* LaunchScreen.storyboard in Resources */,
+				A2270C4128B1626A00D075C1 /* TicketTableViewCell.xib in Resources */,
 				A25F504328B0CEC000F81F34 /* Assets.xcassets in Resources */,
 				A25F50AD28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
 				A25F504128B0CEBF00F81F34 /* Main.storyboard in Resources */,
@@ -401,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25F50BD28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
+				A2270C4228B1626A00D075C1 /* TicketTableViewCell.xib in Resources */,
 				A25F50AE28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
 				A2B0666628B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */,
 				A25F50AB28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
@@ -413,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25F50BE28B1271600F81F34 /* Roboto-Bold.ttf in Resources */,
+				A2270C4328B1626A00D075C1 /* TicketTableViewCell.xib in Resources */,
 				A25F50AF28B1271600F81F34 /* Roboto-Medium.ttf in Resources */,
 				A2B0666728B12DEF00B7F7A0 /* TimeCollectionViewCell.xib in Resources */,
 				A25F50AC28B1271600F81F34 /* Roboto-Regular.ttf in Resources */,
@@ -533,11 +550,13 @@
 				A25F507228B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A25F508328B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F503E28B0CEBF00F81F34 /* HomeViewController.swift in Sources */,
+				A2270C3928B15B9700D075C1 /* TicketViewController.swift in Sources */,
 				A25F507C28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A25F503A28B0CEBF00F81F34 /* AppDelegate.swift in Sources */,
 				A25F503C28B0CEBF00F81F34 /* SceneDelegate.swift in Sources */,
 				A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F507628B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
+				A2270C3E28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
 				A25F508728B11E8900F81F34 /* DetailViewController.swift in Sources */,
 				A2B0666228B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 			);
@@ -552,9 +571,11 @@
 				A25F507728B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F507328B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */,
+				A2270C3F28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
 				A2B0666328B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 				A25F508428B1120400F81F34 /* UIView+Extension.swift in Sources */,
 				A25F505128B0CEC000F81F34 /* taylerTests.swift in Sources */,
+				A2270C3A28B15B9700D075C1 /* TicketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +589,8 @@
 				A25F505D28B0CEC000F81F34 /* taylerUITestsLaunchTests.swift in Sources */,
 				A2B0666428B12DEF00B7F7A0 /* TimeCollectionViewCell.swift in Sources */,
 				A25F507828B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
+				A2270C4028B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
+				A2270C3B28B15B9700D075C1 /* TicketViewController.swift in Sources */,
 				A25F507E28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F508928B11E8900F81F34 /* DetailViewController.swift in Sources */,
