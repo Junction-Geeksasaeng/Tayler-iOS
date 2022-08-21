@@ -47,6 +47,11 @@ class PaymentViewController: UIViewController {
     @IBAction func showPrevious(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func showNextView(_ sender: Any) { 
+        let payVC = self.storyboard?.instantiateViewController(withIdentifier: "PayVC") as! PayViewController
+        self.navigationController?.pushViewController(payVC, animated: true)
+    }
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
