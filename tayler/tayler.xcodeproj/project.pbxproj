@@ -56,6 +56,9 @@
 		A25F50BC28B1271600F81F34 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */; };
 		A25F50BD28B1271600F81F34 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */; };
 		A25F50BE28B1271600F81F34 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */; };
+		A276032E28B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276032D28B1CA4500EBE3F7 /* TicketsAPI.swift */; };
+		A276032F28B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276032D28B1CA4500EBE3F7 /* TicketsAPI.swift */; };
+		A276033028B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276032D28B1CA4500EBE3F7 /* TicketsAPI.swift */; };
 		A2B0665D28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 		A2B0665E28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
 		A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */; };
@@ -117,6 +120,7 @@
 		A25F509428B1271600F81F34 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		A25F509528B1271600F81F34 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		A25F509A28B1271600F81F34 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A276032D28B1CA4500EBE3F7 /* TicketsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsAPI.swift; sourceTree = "<group>"; };
 		A2B0665C28B128B100B7F7A0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A2B0666028B12DEF00B7F7A0 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2B0666128B12DEF00B7F7A0 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 			children = (
 				A25F508E28B1270100F81F34 /* Font */,
 				A25F506928B0DA0C00F81F34 /* App */,
+				A276033128B1CA4E00EBE3F7 /* Network */,
 				A25F507028B0E20D00F81F34 /* View */,
 				A25F503F28B0CEBF00F81F34 /* Main.storyboard */,
 				A25F504228B0CEC000F81F34 /* Assets.xcassets */,
@@ -293,6 +298,14 @@
 				A25F509428B1271600F81F34 /* Roboto-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		A276033128B1CA4E00EBE3F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A276032D28B1CA4500EBE3F7 /* TicketsAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A276032E28B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */,
 				A25F507228B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
 				A2270C4528B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A25F508328B1120400F81F34 /* UIView+Extension.swift in Sources */,
@@ -576,6 +590,7 @@
 				A25F507D28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
 				A25F507728B0E4B300F81F34 /* UIColor+Extension.swift in Sources */,
 				A25F507328B0E2ED00F81F34 /* CategoryCollectionViewCell.swift in Sources */,
+				A276032F28B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */,
 				A25F508828B11E8900F81F34 /* DetailViewController.swift in Sources */,
 				A2270C3F28B1626A00D075C1 /* TicketTableViewCell.swift in Sources */,
 				A2270C4628B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
@@ -600,6 +615,7 @@
 				A2270C4728B1C5BF00D075C1 /* PaymentViewController.swift in Sources */,
 				A2270C3B28B15B9700D075C1 /* TicketViewController.swift in Sources */,
 				A25F507E28B10B8700F81F34 /* ContentCollectionViewCell.swift in Sources */,
+				A276033028B1CA4500EBE3F7 /* TicketsAPI.swift in Sources */,
 				A2B0665F28B128B100B7F7A0 /* UIFont+Extension.swift in Sources */,
 				A25F508928B11E8900F81F34 /* DetailViewController.swift in Sources */,
 			);

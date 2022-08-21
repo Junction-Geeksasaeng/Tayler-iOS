@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
 
@@ -13,12 +14,12 @@ class HomeViewController: UIViewController {
     
     var categoryLabelArray: [UILabel] = []
     var contentsArray: [Content] = [
-        Content(title: "Cats", contentImage: UIImage(named: "Cats"), dDay: "D-4", ticketNum: "#1 - #300", tayCost: "1.0"),
-        Content(title: "Kinky\nBoots", contentImage: UIImage(named: "KinkyBoots"), dDay: "D-5", ticketNum: "#1 - #100", tayCost: "1.7"),
-        Content(title: "Dr.Jekyll&\nMr.Hyde", contentImage: UIImage(named: "Jekyll"), dDay: "D-7", ticketNum: "#1 - #239", tayCost: "0.8"),
-        Content(title: "Chicago", contentImage: UIImage(named: "Chicago"), dDay: "D-9", ticketNum: "#1 - #108", tayCost: "2.1"),
-        Content(title: "Wicked", contentImage: UIImage(named: "Wicked"), dDay: "D-10", ticketNum: "#1 - #80", tayCost: "1.1"),
-        Content(title: "The\nPhantom of\nthe Opera", contentImage: UIImage(named: "Phantom"), dDay: "D-347", ticketNum: "#1 - #100", tayCost: "0"),
+        Content(contentImage: UIImage(named: "Cats"), dDay: "D-4", ticketNum: "#1 - #300", tayCost: "1.0"),
+        Content(contentImage: UIImage(named: "KinkyBoots"), dDay: "D-5", ticketNum: "#1 - #100", tayCost: "1.7"),
+        Content(contentImage: UIImage(named: "Jekyll"), dDay: "D-7", ticketNum: "#1 - #239", tayCost: "0.8"),
+        Content(contentImage: UIImage(named: "Chicago"), dDay: "D-9", ticketNum: "#1 - #108", tayCost: "2.1"),
+        Content(contentImage: UIImage(named: "Wicked"), dDay: "D-10", ticketNum: "#1 - #80", tayCost: "1.1"),
+        Content(contentImage: UIImage(named: "Phantom"), dDay: "D-347", ticketNum: "#1 - #100", tayCost: "0"),
     ]
     
     // MARK: - Outlets
@@ -35,6 +36,7 @@ class HomeViewController: UIViewController {
         
         setAttributes()
         setCollectionView()
+        loadPapers()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,6 +85,11 @@ class HomeViewController: UIViewController {
         contentCollectionView.register(nibName, forCellWithReuseIdentifier: ContentCollectionViewCell.identifier)
         contentCollectionView.delegate = self
         contentCollectionView.dataSource = self
+    }
+    
+    // API를 통해 ticket papers 데이터를 가져옴
+    private func loadPapers() {
+        TicketsAPI.requestPapers(self)
     }
     
     // MARK: - @objc Functions

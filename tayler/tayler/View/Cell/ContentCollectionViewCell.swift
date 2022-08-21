@@ -8,6 +8,7 @@
 import UIKit
 
 struct Content {
+    var id: String?
     var title: String?
     var contentImage: UIImage?
     var dDay: String?
