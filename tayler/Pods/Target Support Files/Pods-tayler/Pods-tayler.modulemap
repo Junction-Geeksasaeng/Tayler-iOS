@@ -1,0 +1,6 @@
+framework module Pods_tayler {
+  umbrella header "Pods-tayler-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "material-symbols_date-range-rounded.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}

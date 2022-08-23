@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketCell" rowHeight="97" id="KGk-i7-Jjw" customClass="TicketTableViewCell" customModule="tayler" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akx-Tq-8e7">
+                        <rect key="frame" x="26" y="19" width="18" height="25"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-Dj-AZ9">
+                        <rect key="frame" x="86" y="24" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="B0n-cC-my2"/>
+                            <constraint firstAttribute="width" constant="15" id="dKT-vl-jMO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaE-97-H0X">
+                        <rect key="frame" x="136.5" y="22.5" width="26.5" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <color key="textColor" red="0.3294117647" green="0.1843137255" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-Tn-Iav">
+                        <rect key="frame" x="108" y="22.5" width="21.5" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <color key="textColor" red="0.3294117647" green="0.1843137255" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCP-Mi-b2r">
+                        <rect key="frame" x="180" y="22.5" width="28.5" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DownArrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="A3t-dr-pac">
+                        <rect key="frame" x="263.5" y="28.5" width="11" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="11" id="4QE-8h-qaF"/>
+                            <constraint firstAttribute="height" constant="6" id="69C-0S-M97"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$11.41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-Np-frP">
+                        <rect key="frame" x="307.5" y="22.5" width="47" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jou-3c-NcJ">
+                        <rect key="frame" x="26" y="61" width="332" height="5"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="7ny-7O-e9N"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qaH-Dj-AZ9" firstAttribute="centerY" secondItem="akx-Tq-8e7" secondAttribute="centerY" id="6TD-qD-tod"/>
+                    <constraint firstItem="ViP-Np-frP" firstAttribute="centerY" secondItem="A3t-dr-pac" secondAttribute="centerY" id="6de-yh-jcv"/>
+                    <constraint firstItem="akx-Tq-8e7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="CJi-HT-MGE"/>
+                    <constraint firstItem="jou-3c-NcJ" firstAttribute="top" secondItem="akx-Tq-8e7" secondAttribute="bottom" constant="17" id="Jmg-E3-JgB"/>
+                    <constraint firstItem="BaE-97-H0X" firstAttribute="centerY" secondItem="VhJ-Tn-Iav" secondAttribute="centerY" id="LNb-FW-6UG"/>
+                    <constraint firstAttribute="trailing" secondItem="jou-3c-NcJ" secondAttribute="trailing" constant="26" id="PKQ-nT-iwC"/>
+                    <constraint firstItem="VhJ-Tn-Iav" firstAttribute="centerY" secondItem="qaH-Dj-AZ9" secondAttribute="centerY" id="QR2-Et-bXt"/>
+                    <constraint firstItem="A3t-dr-pac" firstAttribute="leading" secondItem="NCP-Mi-b2r" secondAttribute="trailing" constant="55" id="Qe1-6X-rvC"/>
+                    <constraint firstItem="akx-Tq-8e7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="VNi-KU-TUM"/>
+                    <constraint firstItem="akx-Tq-8e7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yhz-Bh-SvN"/>
+                    <constraint firstItem="jou-3c-NcJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="b7V-T7-zSB"/>
+                    <constraint firstItem="NCP-Mi-b2r" firstAttribute="centerY" secondItem="BaE-97-H0X" secondAttribute="centerY" id="bk4-xs-ja2"/>
+                    <constraint firstItem="A3t-dr-pac" firstAttribute="centerY" secondItem="NCP-Mi-b2r" secondAttribute="centerY" id="cec-wh-m78"/>
+                    <constraint firstItem="ViP-Np-frP" firstAttribute="leading" secondItem="A3t-dr-pac" secondAttribute="trailing" constant="33" id="dve-l2-iAn"/>
+                    <constraint firstItem="qaH-Dj-AZ9" firstAttribute="leading" secondItem="akx-Tq-8e7" secondAttribute="trailing" constant="42" id="f6k-fb-pPu"/>
+                    <constraint firstItem="NCP-Mi-b2r" firstAttribute="leading" secondItem="BaE-97-H0X" secondAttribute="trailing" constant="17" id="inO-ec-r81"/>
+                    <constraint firstItem="BaE-97-H0X" firstAttribute="leading" secondItem="VhJ-Tn-Iav" secondAttribute="trailing" constant="7" id="mld-2X-QiI"/>
+                    <constraint firstItem="qaH-Dj-AZ9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="sQH-0f-V71"/>
+                    <constraint firstItem="VhJ-Tn-Iav" firstAttribute="leading" secondItem="qaH-Dj-AZ9" secondAttribute="trailing" constant="7" id="thF-Fs-u6M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ticketId" destination="akx-Tq-8e7" id="LWr-E8-GR4"/>
+                <outlet property="ticketPercent" destination="NCP-Mi-b2r" id="gMR-1a-qrU"/>
+                <outlet property="ticketPrice" destination="VhJ-Tn-Iav" id="9Nj-aw-4r5"/>
+                <outlet property="ticketUsdPrice" destination="ViP-Np-frP" id="DJF-Ps-6GY"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="127.56696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CoinIcon" width="200" height="200"/>
+        <image name="DownArrowIcon" width="11" height="6"/>
+    </resources>
+</document>
