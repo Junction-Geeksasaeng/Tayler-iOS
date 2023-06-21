@@ -1,4 +1,4 @@
-# 블록체인을 이용한 티켓팅 경매 어플, Taylor 🎫
+# 블록체인을 이용한 티켓팅 경매 어플, Tayler 🎫
 
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-v5.0-red?logo=swift" />
